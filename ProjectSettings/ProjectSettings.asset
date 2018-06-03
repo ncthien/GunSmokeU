@@ -631,11 +631,11 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled: {}
-  facebookSdkVersion: 7.9.4
+  facebookSdkVersion: 7.10.1
   apiCompatibilityLevel: 2
-  cloudProjectId: eff4fb1a-0375-4297-b624-4c23c70325d0
+  cloudProjectId: 8f7aaf2b-db88-48d8-ad8c-43fb4da199f8
   projectName: GunSmokeU
-  organizationId: thiennc3
+  organizationId: bossmon
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
