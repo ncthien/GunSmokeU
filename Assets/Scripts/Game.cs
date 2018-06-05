@@ -65,22 +65,22 @@ public class Game : MonoBehaviour
 
     public Vector2 GetMove(Vector2 position, float width, float height, Vector2 move)
     {
-        if (move.x > 0.0f) move.x = Mathf.Min(move.x, mapWidth - position.x - width / 2.0f);
-        else move.x = Mathf.Max(move.x, width / 2.0f - position.x);
-
-        if (move.y > 0.0f) move.y = Mathf.Min(move.y, mapHeight - position.y - height);
-        else move.y = Mathf.Max(move.y, -position.y);
-
-        return move;
+        return map.GetMove(position, width, height, move);
     }
 
     void Update ()
     {
         float dt = Time.deltaTime;
 
-        Vector2 move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Constants.MOVE_SPEED * dt;
-        player.Move(move);
-        
-        SetCameraY(player.GetPosition().y + viewHeight / 2.0f);
+        float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
+
+        if (x != 0.0f || y != 0.0f)
+        {
+            Vector2 move = new Vector2(x, y) * Constants.MOVE_SPEED * dt;
+            player.Move(move);
+
+            SetCameraY(player.GetPosition().y + viewHeight / 2.0f);
+        }
 	}
 }
