@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="16" height="188" tilewidth="16" tileheight="16" infinite="0" nextobjectid="1">
- <tileset firstgid="1" source="l1.tsx"/>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="16" height="188" tilewidth="16" tileheight="16" infinite="0" nextobjectid="148">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="190" columns="10">
+  <image source="tiles.png" width="160" height="304"/>
+ </tileset>
  <tileset firstgid="191" source="../collision.tsx"/>
  <layer name="Background" width="16" height="188">
   <data encoding="csv">
@@ -194,7 +196,7 @@
 121,123,124,4,5,5,4,4,5,5,5,5,5,5,5,5
 </data>
  </layer>
- <layer name="Collision" width="16" height="188" opacity="0.7">
+ <layer name="Collision" width="16" height="188" visible="0" opacity="0.7">
   <data encoding="csv">
 191,191,191,0,0,0,0,0,0,0,0,0,0,0,191,191,
 191,191,191,0,0,0,0,0,0,0,0,0,0,0,191,191,
@@ -386,4 +388,841 @@
 191,191,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup name="Spawn">
+  <object id="23" name="Spawn_1" type="Run" x="86.8409" y="2729.41">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Spawn_2" type="Run" x="169.591" y="2683.16">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Spawn_3" type="Run" x="138.341" y="2669.75">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Spawn_4" type="Run" x="172.091" y="2613.25">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Spawn_5" type="Fixed" x="23.75" y="2538.75">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Sniper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Spawn_6" type="Run" x="180.091" y="2460">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Spawn_7" type="Run" x="152.341" y="2449.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Spawn_8" type="Run" x="141.674" y="2432.84">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Spawn_9" type="Fixed" x="25.0833" y="2379.75">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Sniper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Spawn_10" type="Run" x="143.674" y="2315.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Spawn_11" type="Jump" x="256" y="2353.17">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Spawn_12" type="Run" x="178.674" y="2222.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Spawn_13" type="Run" x="65.674" y="2198.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Spawn_14" type="Run" x="159.007" y="2181.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Spawn_15" type="Run" x="68" y="2152.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Spawn_16" type="Run" x="91" y="2153.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Spawn_17" type="Run" x="0" y="2117.5">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Spawn_18" type="Run" x="256" y="2098.17">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Spawn_19" type="Run" x="51.3333" y="2080.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Spawn_20" type="Run" x="98" y="2062.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Spawn_21" type="Run" x="169.333" y="2040.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Spawn_22" type="Run" x="212" y="2041.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Spawn_23" type="Run" x="90.3333" y="2016.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Spawn_24" type="Run" x="80" y="1975.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Spawn_25" type="Run" x="256" y="1940.17">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Spawn_26" type="Run" x="102.667" y="1900.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Spawn_27" type="Run" x="104" y="1881.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Spawn_28" type="Run" x="128.667" y="1859.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Spawn_29" type="Jump" x="0" y="1731.83">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Spawn_30" type="Run" x="176.333" y="1679.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Spawn_31" type="Run" x="147" y="1660.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Spawn_32" type="Run" x="76.3333" y="1631.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Spawn_33" type="Run" x="104.333" y="1632.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Spawn_34" type="Run" x="88" y="1583.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Spawn_35" type="Run" x="103.667" y="1569.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Spawn_36" type="Run" x="88" y="1527.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Spawn_37" type="Jump" x="0" y="1568.83">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Spawn_38" type="Run" x="64.6667" y="1474.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Spawn_39" type="Run" x="87.6667" y="1473.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Spawn_40" type="Run" x="18.6667" y="1449.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Spawn_41" type="Fixed" x="230.333" y="1451.5">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Sniper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Spawn_42" type="Run" x="26.6667" y="1409.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Spawn_43" type="Run" x="52.3333" y="1394.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Spawn_44" type="Run" x="213" y="1371.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Spawn_45" type="Run" x="0" y="1397.83">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Spawn_46" type="Run" x="113" y="1321.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Spawn_47" type="Run" x="213.667" y="1294.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Spawn_48" type="Run" x="194.333" y="1278.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Spawn_49" type="Run" x="42" y="1279.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Spawn_50" type="Run" x="175" y="1249.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Spawn_51" type="Run" x="206.333" y="1248.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Spawn_52" type="Run" x="160" y="1212.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Spawn_53" type="Run" x="126.667" y="1193.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Spawn_54" type="Run" x="58.3333" y="1169.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Spawn_55" type="Run" x="36.6667" y="1100.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Spawn_56" type="Run" x="256" y="1106.83">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Spawn_57" type="Run" x="95.3333" y="1054.83">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Spawn_58" type="Run" x="168.667" y="1056.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Spawn_59" type="Run" x="111.667" y="1024.17">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Spawn_60" type="Jump" x="256" y="1031.5">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Spawn_61" type="Run" x="0" y="1107.5">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Spawn_62" type="Run" x="170.667" y="958.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="Spawn_63" type="Jump" x="0" y="1002.17">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Stabber"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Spawn_64" type="Run" x="171" y="932.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Spawn_65" type="Run" x="166.667" y="917.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Spawn_66" type="Run" x="139.333" y="909.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Spawn_67" type="Run" x="95" y="889.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Spawn_68" type="Run" x="63.6667" y="867.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Spawn_69" type="Run" x="82" y="849.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="Spawn_70" type="Run" x="147.333" y="851.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="Spawn_71" type="Run" x="137.333" y="810.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Spawn_72" type="Run" x="166.667" y="810.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="Spawn_73" type="Run" x="256" y="832.5">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Spawn_74" type="Run" x="108.667" y="742.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Spawn_75" type="Run" x="256" y="740.167">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Spawn_76" type="Run" x="157" y="703.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Spawn_77" type="Run" x="181.667" y="703.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Spawn_78" type="Run" x="63.6667" y="678.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Spawn_79" type="Run" x="158" y="654.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="Spawn_80" type="Jump" x="6.75016e-14" y="735.167">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Stabber"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Spawn_81" type="Run" x="184.333" y="632.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Spawn_82" type="Run" x="123.333" y="601.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Spawn_83" type="Run" x="106.667" y="592.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Spawn_84" type="Run" x="190.333" y="577.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Spawn_85" type="Run" x="231.333" y="557.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Spawn_86" type="Run" x="256" y="613.167">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Spawn_87" type="Run" x="90.3333" y="553.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Spawn_88" type="Run" x="178" y="536.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Spawn_89" type="Run" x="204.667" y="536.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Spawn_90" type="Run" x="26" y="523.5">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Sniper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Spawn_91" type="Run" x="154.333" y="516.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Spawn_92" type="Run" x="184" y="509.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Spawn_93" type="Run" x="205" y="495.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Spawn_94" type="Run" x="129.333" y="478.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="Spawn_95" type="Run" x="179" y="477.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Spawn_96" type="Run" x="220" y="477.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Spawn_97" type="Run" x="127.667" y="433.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Spawn_98" type="Run" x="110" y="416.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Spawn_99" type="Run" x="66" y="374.167">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Spawn_100" type="Run" x="95" y="337.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Spawn_101" type="Run" x="149" y="304.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Spawn_102" type="Run" x="185.333" y="272.166">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Spawn_103" type="Run" x="256" y="361.166">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Spawn_104" type="Run" x="137.333" y="256.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Spawn_105" type="Run" x="230.333" y="255.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Spawn_106" type="Run" x="172.667" y="225.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Spawn_107" type="Run" x="212.333" y="224.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Spawn_108" type="Run" x="0" y="327.833">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="Spawn_109" type="Run" x="86.3333" y="171.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Spawn_110" type="Run" x="142.333" y="170.5">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Spawn_111" type="Run" x="168" y="169.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="Spawn_112" type="Run" x="256" y="147.833">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Trigger_Position" type="float" value="0.2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Spawn_113" type="Run" x="101.333" y="108.833">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Spawn_114" type="Run" x="178.333" y="108.166">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" name="Spawn_115" type="Run" x="102.333" y="64.1663">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Dynaman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" name="Spawn_116" type="Run" x="152.667" y="49.4997">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="Spawn_117" type="Run" x="179.667" y="33.1663">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
