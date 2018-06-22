@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="16" height="188" tilewidth="16" tileheight="16" infinite="0" nextobjectid="148">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="16" height="188" tilewidth="16" tileheight="16" infinite="0" nextobjectid="209">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="190" columns="10">
   <image source="tiles.png" width="160" height="304"/>
  </tileset>
  <tileset firstgid="191" source="../collision.tsx"/>
+ <tileset firstgid="195" source="../items.tsx"/>
  <layer name="Background" width="16" height="188">
   <data encoding="csv">
 11,22,23,24,4,5,5,5,5,5,5,5,4,28,19,20,
@@ -196,7 +197,7 @@
 121,123,124,4,5,5,4,4,5,5,5,5,5,5,5,5
 </data>
  </layer>
- <layer name="Collision" width="16" height="188" visible="0" opacity="0.7">
+ <layer name="Collision" width="16" height="188" opacity="0.7">
   <data encoding="csv">
 191,191,191,0,0,0,0,0,0,0,0,0,0,0,191,191,
 191,191,191,0,0,0,0,0,0,0,0,0,0,0,191,191,
@@ -388,7 +389,59 @@
 191,191,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup name="Spawn">
+ <objectgroup name="Items">
+  <object id="166" name="Barrel" gid="195" x="32" y="1850" width="16" height="16"/>
+  <object id="167" name="Barrel" gid="195" x="32" y="1786" width="16" height="16"/>
+  <object id="168" name="Barrel" gid="195" x="32" y="1578" width="16" height="16"/>
+  <object id="169" name="Barrel" gid="195" x="32" y="1562" width="16" height="16"/>
+  <object id="170" name="Woman" gid="206" x="49" y="1818" width="14" height="24">
+   <properties>
+    <property name="Items" value="Shotgun:6000;MachineGun:10000;Magnum:20000;SmartBomb:8000"/>
+   </properties>
+  </object>
+  <object id="171" name="Man" gid="205" x="192" y="1082" width="16" height="23">
+   <properties>
+    <property name="Items" value="Bulletsx4:1500;Horse:20000;WantedPoster:20000"/>
+   </properties>
+  </object>
+  <object id="172" name="Invincibility" gid="204" x="64" y="602" width="16" height="16"/>
+  <object id="173" name="Barrel" gid="195" x="48" y="2570" width="16" height="16"/>
+  <object id="175" name="Barrel" gid="195" x="48" y="2554" width="16" height="16"/>
+  <object id="176" name="Barrel" gid="195" x="48" y="2394" width="16" height="16"/>
+  <object id="177" name="Barrel" gid="195" x="48" y="2362" width="16" height="16"/>
+  <object id="178" name="Barrel" gid="195" x="32" y="842" width="16" height="16"/>
+  <object id="179" name="WantedPoster" gid="200" x="33" y="825" width="14" height="15"/>
+  <object id="180" name="Barrel" gid="195" x="32" y="634" width="16" height="16"/>
+  <object id="181" name="Barrel" gid="195" x="48" y="634" width="16" height="16"/>
+  <object id="182" name="Barrel" gid="195" x="48" y="522" width="16" height="16"/>
+  <object id="183" name="Barrel" gid="195" x="48" y="506" width="16" height="16"/>
+  <object id="184" name="Barrel" gid="195" x="48" y="474" width="16" height="16"/>
+  <object id="185" name="Barrel" gid="195" x="32" y="378" width="16" height="16"/>
+  <object id="186" name="Barrel" gid="195" x="48" y="378" width="16" height="16"/>
+  <object id="187" name="Barrel" gid="195" x="32" y="186" width="16" height="16"/>
+  <object id="188" name="Barrel" gid="195" x="208" y="2714" width="16" height="16"/>
+  <object id="189" name="Barrel" gid="195" x="208" y="2698" width="16" height="16"/>
+  <object id="190" name="Barrel" gid="195" x="208" y="2458" width="16" height="16"/>
+  <object id="191" name="Barrel" gid="195" x="208" y="2346" width="16" height="16"/>
+  <object id="192" name="Barrel" gid="195" x="208" y="2330" width="16" height="16"/>
+  <object id="193" name="Barrel" gid="195" x="160" y="2170" width="16" height="16"/>
+  <object id="194" name="Barrel" gid="195" x="176" y="2170" width="16" height="16"/>
+  <object id="195" name="Barrel" gid="195" x="192" y="2170" width="16" height="16"/>
+  <object id="196" name="Barrel" gid="195" x="208" y="1914" width="16" height="16"/>
+  <object id="197" name="Barrel" gid="195" x="224" y="1914" width="16" height="16"/>
+  <object id="198" name="Barrel" gid="195" x="192" y="1546" width="16" height="16"/>
+  <object id="199" name="Barrel" gid="195" x="192" y="1530" width="16" height="16"/>
+  <object id="200" name="Barrel" gid="195" x="192" y="1466" width="16" height="16"/>
+  <object id="201" name="Barrel" gid="195" x="192" y="1626" width="16" height="16"/>
+  <object id="202" name="Barrel" gid="195" x="208" y="1050" width="16" height="16"/>
+  <object id="203" name="Barrel" gid="195" x="176" y="1162" width="16" height="16"/>
+  <object id="204" name="Barrel" gid="195" x="192" y="1162" width="16" height="16"/>
+  <object id="205" name="Barrel" gid="195" x="160" y="890" width="16" height="16"/>
+  <object id="206" name="Barrel" gid="195" x="176" y="890" width="16" height="16"/>
+  <object id="207" name="Barrel" gid="195" x="192" y="890" width="16" height="16"/>
+  <object id="208" name="Barrel" gid="195" x="176" y="330" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="Spawn" locked="1">
   <object id="23" name="Spawn_1" type="Run" x="86.8409" y="2729.41">
    <properties>
     <property name="Direction" value="Down"/>
@@ -1223,6 +1276,52 @@
     <property name="Enemy_Type" value="Blasto"/>
    </properties>
    <point/>
+  </object>
+ </objectgroup>
+ <objectgroup name="BossSpawn" visible="0">
+  <object id="162" name="Spawn_3" type="Run" x="256" y="146">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Punk"/>
+    <property name="Weight" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="161" name="Spawn_2" type="Jump" x="256" y="146">
+   <properties>
+    <property name="Direction" value="Left"/>
+    <property name="Enemy_Type" value="Stabber"/>
+    <property name="Weight" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="159" name="Spawn_1" type="Jump" x="0" y="66.6667">
+   <properties>
+    <property name="Direction" value="Right"/>
+    <property name="Enemy_Type" value="Stabber"/>
+    <property name="Weight" type="int" value="10"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="157" name="SpawnZone_2" type="Run" x="64" y="0" width="128">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Blasto"/>
+    <property name="Weight" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="158" name="SpawnZone_1" type="Run" x="64" y="0" width="128">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="Punk;Dynaman"/>
+    <property name="Weight" type="int" value="200"/>
+   </properties>
+  </object>
+  <object id="163" name="SpawnZone_Boss" type="Run" x="80" y="0" width="96">
+   <properties>
+    <property name="Direction" value="Down"/>
+    <property name="Enemy_Type" value="BanditBill"/>
+   </properties>
   </object>
  </objectgroup>
 </map>
